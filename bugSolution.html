@@ -1,0 +1,11 @@
+The solution avoids using `@apply` with pseudo-selectors directly. Instead, it utilizes a more robust approach.  We create a separate class that defines the hover styles and apply it directly to the element. This removes the reliance on `@apply` to handle pseudo-selectors. 
+
+Here is the updated code:
+
+```html
+<div class="bg-blue-500 text-white p-4 hover:bg-blue-700">
+  Hover me!
+</div>
+```
+
+This ensures that the hover styles are applied correctly without conflicting with `@apply` directive.
